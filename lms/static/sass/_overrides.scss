@@ -1248,6 +1248,7 @@ header.header-main {
 }
 
 .static-content {
+  text-align: justify;
   padding: 3rem 0;
   h1 {
     font-size: 1.5rem;
@@ -1288,9 +1289,9 @@ header.header-main {
   .mission-statement {
     margin-top: 1rem;
     img {
-      border-radius: 50%;
-      border: 6px solid #D3D3D3;
-      width: 120px;
+      //border-radius: 50%;
+      //border: 6px solid #D3D3D3;
+      width: 150px;
     }
     p {
       font-size: 1.05rem;
@@ -1445,8 +1446,8 @@ header.header-main {
   }
   .course-actions {
     .enter-course {
-      background: #0074b4;
-      color: $white;
+      background: #0074b4 !important;
+      color: $white !important;
     }
   }
   .dashboard-search-bar {
