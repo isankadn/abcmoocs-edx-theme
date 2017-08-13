@@ -913,6 +913,8 @@ header.header-main {
     .about-icon {
       img {
         width: 150px;
+        border-radius: 500px;
+        border: #e4e4e4 5px solid;
       }
       span {
         font-weight: bold;
