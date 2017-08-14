@@ -56,7 +56,7 @@ body {
     margin: 0;
     max-width: 100%;
     .banner {
-      background: url("../images/hero-home-page.png") no-repeat top center !important;
+      background: url("../images/hero-home-page.jpg") no-repeat top center !important;
       background-size: cover !important;
       height: 408px;
       .banner-text1 {
@@ -811,7 +811,7 @@ header.header-main {
   background-color: #f5fbff;
   .advisory-container {
     max-width: 100%;
-    padding: 1.5em 1.04167% 3em;
+    padding: 1em 1.04167% 3em;
     margin-left: auto;
     margin-right: auto;
     .text-center {
@@ -829,6 +829,7 @@ header.header-main {
       .advisory-list-item {
         background-color: #2196f3;
         border-radius: 5px;
+        margin-bottom: 5px;
       }
       .advisory-icon {
         img {
@@ -913,7 +914,7 @@ header.header-main {
     .about-icon {
       img {
         width: 150px;
-        border-radius: 500px;
+        border-radius: 1000px;
         border: #e4e4e4 5px solid;
       }
       span {
@@ -1488,6 +1489,9 @@ header.header-main {
   .hero {
     .tint-dark {
       .grid-manual {
+        .banner {
+          height: 435px;
+        }
         .text-tint {
           .btn-neutral {
             padding: 0.8em 2em;
