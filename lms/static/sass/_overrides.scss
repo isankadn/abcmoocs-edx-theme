@@ -1734,3 +1734,59 @@ header.header-main {
     }
   }
 }
+
+//mobile devices
+@media only screen
+  and (max-width: 414px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  .hero {
+    min-height: 129px;
+    .row {
+      .banner {
+        height: 129px;
+      }
+      .banner-text1 {
+        margin-top: 50px !important;
+        h1{font-size: 13px !important;}
+
+      }
+      .banner-text2 {
+        margin-top: 70px !important;
+        h2{font-size: 13px !important;}
+
+      }
+    }
+  }
+
+  .bottom-banner-container {
+  background-color: $white !important;
+  background: url("../images/ bottom-banner.jpg") center center no-repeat;
+  height: 129px;
+  .bottom-banner-text {
+    width: 100%;
+    margin: auto;
+    .bottom-learn {
+      h2 {
+        text-align: center;
+        margin: 0;
+        padding-top: 0.1rem;
+        color: #ffffff;
+        font-weight: bold;
+      }
+    }
+    .bottom-register {
+
+      text-align: center;
+      margin: 0;
+      padding-top: 1rem;
+      color: #ffffff;
+      font-weight: bold;
+
+    }
+  }
+}
+
+  .footer-logo{
+    text-align: left !important;
+  }
+}
