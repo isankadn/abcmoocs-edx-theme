@@ -30,7 +30,7 @@
                         $('#contact_form').trigger('reset');
                     }, 2000);
                 }).fail(function(xhr) {
-                    var responseData = jQuery.parseJSON(xhr.responseText);
+                    var responseData = jQuery.parseJSON(JSON.stringify(xhr.responseText));
                     addErrorDiv(responseData.field);
                 });
             }
