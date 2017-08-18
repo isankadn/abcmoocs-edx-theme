@@ -23,6 +23,11 @@ body {
         //padding-left: 1rem;
         margin: 0 auto;
         background-color: #f5fbff;
+        .courses-container{
+          .courses{
+            padding: 0 0 20px;
+          }
+        }
       }
     }
     .course-profile {
@@ -747,7 +752,7 @@ header.header-main {
         padding: 1.5rem 0;
         .find-courses {
           .courses {
-            padding: 0px 1rem 15px;
+            padding: 0 0 15px;
           }
         }
         h2 {
