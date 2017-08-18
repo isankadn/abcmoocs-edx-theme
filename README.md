@@ -1,1 +1,1 @@
-# abcmoocs-edx-theme
+# abcmoocs.org Open edX theme
