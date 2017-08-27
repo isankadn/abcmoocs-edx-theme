@@ -10,6 +10,7 @@
 
 <%block name="headextra">
     <link rel="stylesheet" type="text/css" href="${static.url('css/slick.css')}"/>
+    <link rel="stylesheet" type="text/css" href="${static.url('css/owl.carousel.min.css')}"/>
 </%block>
 
 <%block name="js_extra">
@@ -21,9 +22,13 @@
             }
         })
     </script>
-##     <%include file="about_site.html" />
-##     <%include file="advisory_site.html" />
+    ##     <%include file="about_site.html" />
+    ##     <%include file="advisory_site.html" />
+##<%include file="partners_site.html" />
+
     <script type="text/javascript" src="${static.url('js/slick.min.js')}"></script>
+    <script type="text/javascript" src="${static.url('js/owl.carousel.min.js')}"></script>
+
 </%block>
 
 <section class="home">
@@ -51,6 +56,99 @@
             </div>
         </div>
     </header>
+
+    <section class="partners-section">
+        <div class="partners-container">
+            <section class="partners-section">
+                <div class="partners-title">
+                    <h3>
+                        <span class="partners-title--big">Our Partners</span>
+                    </h3>
+                </div>
+                <div class="partners">
+                    <div class="owl-carousel">
+
+                        <div class="owl-item" style="width: 216px;">
+                            <li>
+                                <a href="https://www.saps.gov.za/" target="_blank">
+                                    <img src="${static.url('images/saps.jpg')}"
+                                         alt=" South African Police Service (SAPS) Museum">
+                                </a>
+                            </li>
+                        </div>
+                        <div class="owl-item" style="width: 216px;">
+                            <li>
+                                <a href="https://family-history.co.za/" target="_blank">
+                                    <img src="${static.url('images/ctfhs.jpg')}"
+                                         alt=" The Cape Town Family History Society">
+                                </a>
+                            </li>
+                        </div>
+                        <div class="owl-item" style="width: 216px;">
+                            <li>
+                                <a href="http://www.botanicalsociety.org.za/" target="_blank">
+                                    <img src="${static.url('images/bsosa.jpg')}"
+                                         alt=" The Botanical Society of South Africa (BotSoc)">
+                                </a>
+                            </li>
+                        </div>
+                        <div class="owl-item" style="width: 216px;">
+                            <li>
+                                <a href="http://www.academia.co.za/" target="_blank">
+                                    <img src="${static.url('images/academia.jpg')}"
+                                         alt=" Academia">
+                                </a>
+                            </li>
+                        </div>
+                        <div class="owl-item" style="width: 216px;">
+                            <li>
+                                <a href="https://www.saps.gov.za/" target="_blank">
+                                    <img src="${static.url('images/saps.jpg')}"
+                                         alt=" South African Police Service (SAPS) Museum">
+                                </a>
+                            </li>
+                        </div>
+                        <div class="owl-item" style="width: 216px;">
+                            <li>
+                                <a href="https://family-history.co.za/" target="_blank">
+                                    <img src="${static.url('images/ctfhs.jpg')}"
+                                         alt=" The Cape Town Family History Society">
+                                </a>
+                            </li>
+                        </div>
+                        <div class="owl-item" style="width: 216px;">
+                            <li>
+                                <a href="http://www.botanicalsociety.org.za/" target="_blank">
+                                    <img src="${static.url('images/bsosa.jpg')}"
+                                         alt=" The Botanical Society of South Africa (BotSoc)">
+                                </a>
+                            </li>
+                        </div>
+                    </div>
+
+                </div>
+                <script type="text/javascript">
+
+                    $(document).ready(function () {
+                        $(".owl-carousel").owlCarousel({
+                            autoPlay: 3000,
+                            loop: true,
+
+                            items: 4,
+                            itemsDesktop: [1199, 4],
+                            itemsDesktopSmall: [979, 4],
+                            itemsTablet: [768, 3],
+                            itemsMobile: [479, 2],
+                            navigation: true,
+                            navigationText: false,
+                            pagination: false,
+
+                        });
+                    });
+                </script>
+            </section>
+        </div>
+    </section>
     <div class="grid-container grid-manual">
         <div class="row">
             <div class="home-text-one col-12 sm-col-12 md-col-12 lg-col-12 xl-col-12">
@@ -68,12 +166,13 @@
     <div class="fcourse-list">
             <%include file="${courses_list}" />
     </div>
-##     <section class="about-section">
-##         <div class="about-container"></div>
-##     </section>
-##     <section class="advisory-section">
-##         <div class="advisory-container"></div>
-##     </section>
+    ##     <section class="about-section">
+    ##         <div class="about-container"></div>
+    ##     </section>
+    ##     <section class="advisory-section">
+    ##         <div class="advisory-container"></div>
+    ##     </section>
+
     <section class="bottom-banner-section">
         <div class="grid-manual bottom-banner-container">
             <div class="bottom-banner-text">
